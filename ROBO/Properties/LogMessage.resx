@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DEBU0010_9" xml:space="preserve">
+    <value>010 - Versão SQL '{0}', Servidor '{1}', Base '{2}', Usuário DB '{3}', Senha DB '{4}', Usuário SBO  '{5}', Senha SBO  '{6}', Linguagem DI ' {7}' e Servidor Licença SBO  '{8}'.</value>
+    <comment>Debug | Informa no sistema de log os dados de conexão com a base de dados e SBO. A senha é exibida quando o debug está habilitado.</comment>
+  </data>
+  <data name="ERRO0001_1" xml:space="preserve">
+    <value>001 - Não foi encontrado nenhum item com cadastro de código de barra padrão  nº {0}.</value>
+    <comment>Cadastro | O sistema verifica no cadastro do item o código de barra padrão (OITM.CodeBars).</comment>
+  </data>
+  <data name="ERRO0006_1" xml:space="preserve">
+    <value>006 - Erro desconhecido. {0}</value>
+    <comment>Erro |  Ocorreu alguma falha no processo principal. Verifique os logs anteriores para maiores detalhes, não havendo uma explicação razoavel, será necessário debugar o projeto.</comment>
+  </data>
+  <data name="ERRO0007_1" xml:space="preserve">
+    <value>007 - Erro ao processar o método {0}. {1}</value>
+    <comment>Erro | Erro ao processar algum método de integração SAP -&gt; Jomar, verique o nome do método e a query que foi executada.</comment>
+  </data>
+  <data name="ERRO0008_G1" xml:space="preserve">
+    <value>008 - Falha ao executar o procedimento. Verifique no log o motivo do erro. {0}</value>
+    <comment>Erro | Verifique nas linhas anteriores do log para verificar o motivo da falha.</comment>
+  </data>
+  <data name="ERRO0009_1" xml:space="preserve">
+    <value>009 - Erro interno no serviço.</value>
+    <comment>Erro | Verifique as linhas anteriores no log para verificar o que fato foi ocorrido. A informação erro interno é apenas para informar que a excessão chegou na penultima camada.</comment>
+  </data>
+  <data name="ERRO0012_5" xml:space="preserve">
+    <value>012 - Erro ao tentar estabelecer a conexão na companhia {0} (Servidor {1}) com o usuário {2} (Demorou {3} seg, para conexão). SAP : {4}</value>
+    <comment>Erro | Não foi possivel estabelece a conexão com o SAP, verifique no arquivo de configuração se os dados de conexão estão corretos.</comment>
+  </data>
+  <data name="ERRO0013_1" xml:space="preserve">
+    <value>013 - Erro ao tentar instânciar e utilizar o método SAPbobsCOM.Company. {0}</value>
+    <comment>Erro | Ocorreu algum erro interno ao tentar instânciar, Tente executar esse serviço em outra maquina para verficar se o problema persiste. Caso persistir, isso será considerado um bug. </comment>
+  </data>
+  <data name="ERRO0014_G2" xml:space="preserve">
+    <value>014 - Não foi possivel localizaro código do item pelo código de barra nº "{0}".</value>
+    <comment>Cadastro | Verifique se existe cadastrado algum item com o código de barra. Para facilitar, verifique no arquivo de profile para ver como a query foi executada.</comment>
+  </data>
+  <data name="ERRO0015_G3" xml:space="preserve">
+    <value>015 - Transação nº {0} :Não foi possivel localizar o documento {1} na tabela {2}. </value>
+    <comment>Erro | Existe um DocNum registrado na tabela de transação, mas ele não existe dentro do SAP.</comment>
+  </data>
+  <data name="ERRO0017_1" xml:space="preserve">
+    <value>017 - Erro na excução do serviço. {0}</value>
+    <comment>Erro | Verifique no arquivo de log o motivo do erro.</comment>
+  </data>
+  <data name="ERRO_0025_G1" xml:space="preserve">
+    <value>025 - Erro ao {0}  a Ordem de Produção.</value>
+    <comment>Erro | Verifique a mensagem de log para ver o erro.</comment>
+  </data>
+  <data name="ERRO_0026_0" xml:space="preserve">
+    <value>026 - Erro na entrada de produto acabado.</value>
+    <comment>Erro | Verifique a mensagem de log para ver o erro.</comment>
+  </data>
+  <data name="ERRO_0027_1" xml:space="preserve">
+    <value>027 - Falha ao tentar registrar novos clientes, motivo "{0}".</value>
+    <comment>Erro | Verifique a mensagem de log para ver o erro.</comment>
+  </data>
+  <data name="ERRO_0028_1" xml:space="preserve">
+    <value>027 - Falha ao tentar registrar novos fornecedores, motivo "{0}".</value>
+    <comment>Erro | Verifique a mensagem de log para ver o erro.</comment>
+  </data>
+  <data name="ERRO_0032_0" xml:space="preserve">
+    <value>032 - Perdida a conexão estabelecida com SBO.</value>
+    <comment>Erro|Verifique a infraestrutura da empresa.</comment>
+  </data>
+  <data name="ERRO_003_4" xml:space="preserve">
+    <value>003 - O SAP recusou a transação nº {0} na linha ID {1} com o item {3}. Mensagem {2}</value>
+    <comment>Analisar | Será necessário verificar no log qual foi a mensagem de retorno de erro que o SAP gerou ao tentar executar a transação.</comment>
+  </data>
+  <data name="ERRO_TRANS_28_2" xml:space="preserve">
+    <value>028 - Não foi encontrado nenhum item com o código de barra nº "{0}" (ID:{1}).</value>
+    <comment>Erro | Verifique no cadastro dos items no SAP para verificar se o Código de barra foi cadastrado.</comment>
+  </data>
+  <data name="GLOBAL_0029_1" xml:space="preserve">
+    <value>029 - Não foi localizado nenhum item ou recurso com o código de barras/recurso com código "{0}".</value>
+    <comment>Erro|Verifique se o código  de barra está cadastrado no SAP ou se caso for um recurso, verifique o cadastro de recurso.</comment>
+  </data>
+  <data name="INFO0004_0" xml:space="preserve">
+    <value>004 - Serviço inicializado.</value>
+    <comment>Informação | Apenas informa se o serviço foi inicializado.</comment>
+  </data>
+  <data name="INFO0005_0" xml:space="preserve">
+    <value>005 - Serviço finalizado.</value>
+    <comment>Informação | Apenas informa se o serviço foi encerrado.</comment>
+  </data>
+  <data name="INFO0011_4" xml:space="preserve">
+    <value>011 - Conectado com sucesso na companhia {0} (Servidor {1}) com usuário {2} (Demorou {3} seg, para conexão).</value>
+    <comment>Informação | Informa os dados de conexão.</comment>
+  </data>
+  <data name="ProductTree_e0018_0" xml:space="preserve">
+    <value>018 - A coluna [OITT_TreeType] da linha está com tipo de estrutura errada, são permitido somente os tipos 'A','S','P' e 'T'.</value>
+    <comment>Erro | O valor definido no campo TreeType é invalido, são aceitos apenas os valores 'A','S','P' e 'T'. Quem definie o valor informado é o sistema Jomar.</comment>
+  </data>
+  <data name="ProductTree_e0019_0" xml:space="preserve">
+    <value>019 - Tipo de item na coluna ITT1_Type é invalido.</value>
+    <comment>Erro | Foram tratado apenas 3 consições, sendo : 4 - Item, 290 - Recurso e -18 - Texto.</comment>
+  </data>
+  <data name="ProductTree_e0020_0" xml:space="preserve">
+    <value>020 - Método de baixa na coluna ITT1_IssuedMthd é invalido.</value>
+    <comment>Erro | Só é válidos os dois valores : 'B' aixa por explosão ou 'M'anual. </comment>
+  </data>
+  <data name="ProductTree_e0021_1" xml:space="preserve">
+    <value>021 - Falha ao tentar localizar o Código do produto ({0}) no campo OITT.ItemCode.</value>
+    <comment>Bug | O sistema tenta localizar o item apenas quando for constatado que não trata de um criação de estrutura, mas sim de uma atualização.</comment>
+  </data>
+  <data name="ProductTree_e0022_2" xml:space="preserve">
+    <value>022 - Erro ao tentar efetuar {0} da Estrutura do Produto {1}.</value>
+    <comment>Erro | Verifique no log o motivo do erro ao tentar efetuar cadastro/atualização da estrutura do produto.</comment>
+  </data>
+  <data name="TRANS_0030_2L" xml:space="preserve">
+    <value>030 - Erro ao obter os dados da tabela Sage_Transacoes na linha {0}. Erro :{1}</value>
+    <comment>Erro|Verifique no log o motivo.</comment>
+  </data>
+  <data name="Trans_0031_0" xml:space="preserve">
+    <value>031 - Não é possivel executar a transação 98 quando a quantidade é zero.</value>
+  </data>
+  <data name="TRANS_e0016_G2" xml:space="preserve">
+    <value>016 - Erro ao tentar executar o pedido de venda na transação nº {0}, id {1}.</value>
+    <comment>Erro | Verifique no arquivo de log o motivo do erro.</comment>
+  </data>
+  <data name="TRANS_e0023_0" xml:space="preserve">
+    <value>023 - Tipo de Ordem de Produção invalido.</value>
+    <comment>Erro | O tipo informardo na tabela TransaçãoEditText.Value(uid).ToString(); não é valido.</comment>
+  </data>
+  <data name="TRANS_e0024_0" xml:space="preserve">
+    <value>024 - Status invalido na Ordem de Produção.</value>
+    <comment>Erro | O status informardo na tabela TransaçãoEditText.Value(uid).ToString(); não é valido.</comment>
+  </data>
+  <data name="TRANS_i0002_G1" xml:space="preserve">
+    <value>002 - Não foi encontrada nenhum item aberto na transação nº {0}.</value>
+    <comment>Dados | O serviço não encontrou nenhuma transação aberta na tabela de transações (TransactionType = [SOLICITADO] e ReadBySAP = 'N').</comment>
+  </data>
+  <data name="Erro_0033_2" xml:space="preserve">
+    <value>033 - Não foi possivel localizar o DocNum nº '{0}' (Jomar : {1}) no Pedido de Venda.</value>
+    <comment>Erro|A transação com o número Jomar foi processada, mas ela não está informada na coluna DocNum da transação 32.</comment>
+  </data>
+  <data name="Trans08_0034_2" xml:space="preserve">
+    <value>034 - (Transaction08 ID : {0}) Não foi possivel localizar a Ordem de Produção nº {1} para alterar o Status.</value>
+    <comment>Erro|Contate o suporte para verificar o motivo do erro.</comment>
+  </data>
+  <data name="Trans08_0035_3" xml:space="preserve">
+    <value>035 - (Transaction08 ID : {0}) Erro ao mudar o Status da Ordem de Produção nº {1}. {2}</value>
+    <comment>Erro|O SAP não permitiu liberá a Ordem de produção via Serviço (DI), será necessário libera-la manualmente.</comment>
+  </data>
+  <data name="Trans38_0036_2" xml:space="preserve">
+    <value>036 - (Transaction38 ID : {0}) Não foi possivel localizar a Ordem de Produção nº {1} para alterar o Status.</value>
+    <comment>Erro|Contate o suporte para verificar o motivo do erro.</comment>
+  </data>
+  <data name="Trans38_0037_2" xml:space="preserve">
+    <value>037 - (Transaction38 ID : {0}) Erro ao tentar atualizar a linha (Line_Jomar) na Orgem de Operação. {1}</value>
+  </data>
+  <data name="TransWO_0038_2" xml:space="preserve">
+    <value>038 - (TransactionWO ID : {0}) Não foi possivel localizar a Ordem de Produção nº {1} para alterar o Status.</value>
+    <comment>Erro|Contate o suporte para verificar o motivo do erro.</comment>
+  </data>
+  <data name="TransWO_0039_3" xml:space="preserve">
+    <value>039 - (TransactionWO ID : {0}) Erro ao mudar o Status da Ordem de Produção nº {1}. {2}</value>
+    <comment>Erro|O SAP não permitiu liberá a Ordem de produção via Serviço (DI), será necessário libera-la manualmente.</comment>
+  </data>
+</root>

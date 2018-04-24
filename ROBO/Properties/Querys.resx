@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApagaLog_2" xml:space="preserve">
+    <value>DECLARE	 @id as int
+		,@transType as int
+
+set	@id = {0};
+set @transType = {1};
+
+DELETE [dbo].[TRANSACOES_LOG] WHERE [Id] = @id AND [TransactionType] = @transType</value>
+    <comment>Remove o id do Log. Parâmetros:
+- Id da transação = @Id,
+- Tipo de transação = @transType;</comment>
+  </data>
+  <data name="AtualizaStatusTransacao_3" xml:space="preserve">
+    <value>DECLARE  @DocNum as int
+		,@ReadBySAP as char(1)
+		,@Id as int;
+
+set @DocNum = '{0}'
+set @ReadBySAP = '{1}'
+set @Id = '{2}'
+
+
+UPDATE	 [Sage_Transacoes]
+SET		 DocNum = @DocNum
+		,ReadBySAP = @ReadBySAP
+WHERE	 Id = @Id</value>
+    <comment>Faz update na tabela Transações. Parâmetros:
+- Número do documento = @DocNum (DocNum)
+- Lido pelo SAP = @ReadBySAP (ReadBySAP)
+- Id da Transação = @Id (Id)
+</comment>
+  </data>
+  <data name="CLIENTES_Integrar_0" xml:space="preserve">
+    <value>INSERT INTO	 [SAGE_CLI]			
+		(	 [CardCode_SAP]		,[CardCode_Jomar]
+			,[CardType]			,[CardName]
+			,[CardFName]		,[LineNum]
+			,[TypeofAddress]	,[AddressName]
+			,[Address]			,[AddrType]
+			,[Street]			,[StreetNo]
+			,[Building]			,[Block]
+			,[ZipCode]			,[State]
+			,[County]			,[City]
+			,[Country]			,[FirstName]
+			,[E_MailL]			,[Tel]
+			,[TaxId0]			,[TaxId1]
+			,[TaxId3]			,[TaxId4]
+			,[CONdP]			,[CreateDate]
+			,[UpdateDate]					) 
+
+		SELECT	
+				 ISNULL(ocrd_1.CardCode, '')			As CardCode
+				,ISNULL(ocrd_1.U_PN_Jomar, '')			As U_PN_Jomar
+				,'cCustomer'							As CardType
+				,ISNULL(Upper(ocrd_1.CardName), '')		As CardName
+				,ISNULL(Upper(ocrd_1.CardFName), '')	As CardFName
+				,0										As Linenum
+				,ISNULL(ocrd_1.AddrType, '')			As TypeofAddress
+				,'COBRANÇA'								As AddressName
+				,ISNULL(ocrd_1.Address, '')				As Address
+				,ISNULL(ocrd_1.AddrType, '')			As AddrType
+				,ISNULL(crd1_1.Street, '')				As Street
+				,ISNULL(crd1_1.StreetNo, '')			As StreetNo
+				,ISNULL(crd1_1.Building, '')			As Building
+				,ISNULL(crd1_1.Block, '')				As Block
+				,ISNULL(crd1_1.ZipCode, '')				As ZipCode
+				,ISNULL(ocst_1.U_UF_JOMAR,'')			As State
+				,ISNULL(ocnt_1.Name, '')				As County
+				,ISNULL(crd1_1.City, '')				As City
+				,ISNULL(ocry_1.U_Pais_Jomar, '')		As U_Pais_Jomar
+				,ISNULL(ocpr_1.FirstName, '')			As FirstName
+				,ISNULL(ocrd_1.E_MaiL, '')				As E_MailL
+				,ISNULL(ocrd_1.Phone1, '')				As Tel1
+				,ISNULL(crd7_1.TaxId0,'')				As TaxId0
+				,ISNULL(crd7_1.TaxId1,'')				As TaxId1
+				,ISNULL(crd7_1.TaxId3,'')				As TaxId3
+				,ISNULL(crd7_1.TaxId4,'')				As TaxId4
+				,ISNULL(octg_1.U_CONdP_Jomar, '')		As U_CONdP_Jomar
+				,ocrd_1.CreateDate						As CreateDate
+				,ISNULL(ocrd_1.UpdateDate,ocrd_1.CreateDate)	As UpdateDate
+	FROM		 OCRD ocrd_1
+
+    LEFT JOIN CRD1 crd1_1 
+		ON	 crd1_1.CardCode = ocrd_1.CardCode
+			AND crd1_1.AdresType = 'B'
+    LEFT JOIN OCPR ocpr_1 
+		ON	 ocpr_1.Name = ocrd_1.CntctPrsn 
+			AND ocpr_1.CardCode = ocrd_1.CardCode
+    LEFT JOIN OCTG octg_1 
+		ON	 octg_1.GroupNum = ocrd_1.GroupNum
+    LEFT JOIN OCRY ocry_1 
+		ON	 ocry_1.Code = crd1_1.Country
+    LEFT JOIN CRD7 crd7_1 
+		ON	 crd7_1.CardCode = ocrd_1.CardCode 
+		 AND crd7_1.Address = ''
+	
+	INNER JOIN OCST ocst_1 -- Estados
+		ON	 crd1_1.State = ocst_1.Code
+		AND crd1_1.Country = ocst_1.Country
+	LEFT JOIN OCNT ocnt_1  -- Cidades
+		ON	 crd1_1.County = ocnt_1.AbsId
+
+		 
+	LEFT JOIN [SAGE_CLI] cli
+		ON	 ocrd_1.CardCode = cli.[CardCode_SAP]
+
+	WHERE	 ocrd_1.CardType = 'C' 
+		-- Filtra apenas por cardcode não informado no [SAGE_CLI]
+		AND	 (cli.[CardCode_SAP] IS NULL)
+		-- Filtra os cardcodes processados
+		--AND  (	ISNULL(ocrd_1.U_Processado,'') = 'N' 
+		--		OR ISNULL(ocrd_1.U_Processado,'') = '')</value>
+    <comment>Adiciona os novos clientes na tabela Jomar, desde que eles não esteja já integrados.</comment>
+  </data>
+  <data name="CLIENTE_AtualizaStatus_0" xml:space="preserve">
+    <value>UPDATE OCRD SET U_Processado = 'Y'
+		WHERE U_Processado &lt;&gt; 'Y'
+			AND CardType = 'C'
+			AND CardCode IN (	SELECT DISTINCT [CardCode_SAP] 
+								FROM	[SAGE_CLI] 
+								WHERE	CreateDate = OCRD.CreateDate 
+									AND	UpdateDate = OCRD.UpdateDate)</value>
+    <comment>Atualiza o status de processamento na tabela OCRD (SBO).</comment>
+  </data>
+  <data name="CLIENTE_RemoveDesatualizado_0" xml:space="preserve">
+    <value>DELETE	[SAGE_CLI]
+WHERE	[CardCode_SAP] IN ( SELECT	 OCRD.CardCode 
+							FROM	 OCRD
+							INNER JOIN [SAGE_CLI]
+								ON	 OCRD.CardCode = [SAGE_CLI].[CardCode_SAP]
+							WHERE	(	OCRD.CreateDate &lt;&gt; [SAGE_CLI].CreateDate OR
+										OCRD.UpdateDate &lt;&gt; [SAGE_CLI].UpdateDate)
+								OR	 OCRD.U_Processado &lt;&gt; 'Y')</value>
+    <comment>Remove os clientes na base [SAGE_CLI] que estão desatualizados ou se no SAP foi solicitado o reprocessamento.</comment>
+  </data>
+  <data name="CustoItem_2" xml:space="preserve">
+    <value>DECLARE @ItemCode as nvarchar(100);
+DECLARE @WhsCode as  nvarchar(100);
+
+set @ItemCode = '{0}'
+set @WhsCode = '{1}'
+
+SELECT	 CASE	WHEN AvgPrice = 0 
+				THEN (SELECT U_Custo_Std FROM OITM WHERE ItemCode = @ItemCode)
+				ELSE AvgPrice END Custo
+FROM OITW
+WHERE	 ItemCode = @ItemCode
+	AND	 WhsCode = @WhsCode</value>
+    <comment>Retorna o custo do item baseado pelo depósito, caso nãao haja custo, o valor será obtido pelo campo do usuário.
+Parâmetros:
+- @ItemCode 
+- @WhsCode</comment>
+  </data>
+  <data name="FORNECEDOR_AtualizaStatus_0" xml:space="preserve">
+    <value>UPDATE OCRD SET U_Processado = 'Y'
+		WHERE U_Processado &lt;&gt; 'Y'
+			AND CardType = 'S'
+			AND CardCode IN (	SELECT DISTINCT [CardCode_SAP] 
+								FROM	[SAGE_FOR] 
+								WHERE	CreateDate = OCRD.CreateDate 
+									AND	UpdateDate = OCRD.UpdateDate)</value>
+    <comment>Atualiza o status de processamento na tabela OCRD (SBO).</comment>
+  </data>
+  <data name="FORNECEDOR_Integrar_1" xml:space="preserve">
+    <value>INSERT INTO	 [SAGE_FOR]			
+		(	 [CardCode_SAP]		,[CardCode_Jomar]
+			,[CardType]			,[CardName]
+			,[CardFName]		,[LineNum]
+			,[TypeofAddress]	,[AddressName]
+			,[Address]			,[AddrType]
+			,[Street]			,[StreetNo]
+			,[Building]			,[Block]
+			,[ZipCode]			,[State]
+			,[County]			,[City]
+			,[Country]			,[FirstName]
+			,[E_MailL]			,[Tel]
+			,[TaxId0]			,[TaxId1]
+			,[TaxId3]			,[TaxId4]
+			,[CONdP]			,[CreateDate]
+			,[UpdateDate]					) 
+
+		SELECT	
+				 ISNULL(ocrd_1.CardCode, '')			As CardCode
+				,ISNULL(ocrd_1.U_PN_Jomar, '')			As U_PN_Jomar
+				,'Supplier'								As CardType
+				,ISNULL(Upper(ocrd_1.CardName), '')		As CardName
+				,ISNULL(Upper(ocrd_1.CardFName), '')	As CardFName
+				,0										As Linenum
+				,ISNULL(ocrd_1.AddrType, '')			As TypeofAddress
+				,'COBRANÇA'								As AddressName
+				,ISNULL(ocrd_1.Address, '')				As Address
+				,ISNULL(ocrd_1.AddrType, '')			As AddrType
+				,ISNULL(crd1_1.Street, '')				As Street
+				,ISNULL(crd1_1.StreetNo, '')			As StreetNo
+				,ISNULL(crd1_1.Building, '')			As Building
+				,ISNULL(crd1_1.Block, '')				As Block
+				,ISNULL(crd1_1.ZipCode, '')				As ZipCode
+				,ISNULL(ocst_1.U_UF_JOMAR,'')			As State
+				,ISNULL(ocnt_1.Name, '')				As County
+				,ISNULL(crd1_1.City, '')				As City
+				,ISNULL(ocry_1.U_Pais_Jomar, '')		As U_Pais_Jomar
+				,ISNULL(ocpr_1.FirstName, '')			As FirstName
+				,ISNULL(ocrd_1.E_MaiL, '')				As E_MailL
+				,ISNULL(ocrd_1.Phone1, '')				As Tel1
+				,ISNULL(crd7_1.TaxId0,'')				As TaxId0
+				,ISNULL(crd7_1.TaxId1,'')				As TaxId1
+				,ISNULL(crd7_1.TaxId3,'')				As TaxId3
+				,ISNULL(crd7_1.TaxId4,'')				As TaxId4
+				,ISNULL(octg_1.U_CONdP_Jomar, '')		As U_CONdP_Jomar
+				,ocrd_1.CreateDate						As CreateDate
+				,ocrd_1.UpdateDate						As UpdateDate
+	FROM		 OCRD ocrd_1
+
+    LEFT JOIN CRD1 crd1_1 
+		ON	 crd1_1.CardCode = ocrd_1.CardCode
+			AND crd1_1.AdresType = 'B'
+    LEFT JOIN OCPR ocpr_1 
+		ON	 ocpr_1.Name = ocrd_1.CntctPrsn 
+			AND ocpr_1.CardCode = ocrd_1.CardCode
+    LEFT JOIN OCTG octg_1 
+		ON	 octg_1.GroupNum = ocrd_1.GroupNum
+    LEFT JOIN OCRY ocry_1 
+		ON	 ocry_1.Code = crd1_1.Country
+    LEFT JOIN CRD7 crd7_1 
+		ON	 crd7_1.CardCode = ocrd_1.CardCode 
+		 AND crd7_1.Address = ''
+	
+	INNER JOIN OCST ocst_1 -- Estados
+		ON	 crd1_1.State = ocst_1.Code
+		AND crd1_1.Country = ocst_1.Country
+	LEFT JOIN OCNT ocnt_1  -- Cidades
+		ON	 crd1_1.County = ocnt_1.AbsId
+
+		 
+	LEFT JOIN [SAGE_FOR] forn
+		ON	 ocrd_1.CardCode = forn.[CardCode_SAP]
+
+	WHERE	 ocrd_1.CardType = 'S' 
+		-- Filtra apenas por cardcode não informado no [SAGE_CLI]
+		AND	 (forn.[CardCode_SAP] IS NULL) 
+		AND  ocrd_1.GroupCode in ({0})</value>
+    <comment>Adiciona os novos clientes na tabela Jomar, desde que eles não esteja já integrados.
+
+PARÂMETROS OBRIGATÓRIO :
+- OCRD.GroupCode : Informar o grupo de forncedores.</comment>
+  </data>
+  <data name="FORNECEDOR_RemoveDesatualizado_0" xml:space="preserve">
+    <value>DELETE	[SAGE_FOR]
+WHERE	[CardCode_SAP] IN ( SELECT	 OCRD.CardCode 
+							FROM	 OCRD
+							INNER JOIN [SAGE_FOR]
+								ON	 OCRD.CardCode = [SAGE_FOR].[CardCode_SAP]
+							WHERE	(	OCRD.CreateDate &lt;&gt; [SAGE_FOR].CreateDate OR
+										OCRD.UpdateDate &lt;&gt; [SAGE_FOR].UpdateDate)
+								OR	 OCRD.U_Processado &lt;&gt; 'Y')</value>
+    <comment>Remove os fornecedores na base [SAGE_FOR] que estão desatualizados ou se no SAP foi solicitado o reprocessamento.</comment>
+  </data>
+  <data name="InsereLog_3" xml:space="preserve">
+    <value>DECLARE	 @id as int
+		,@transType as int
+		,@msg as nvarchar(300)
+
+
+set	@id = {0};
+set @transType = {1};
+set @msg = '{2}';
+
+INSERT INTO [dbo].[TRANSACOES_LOG] ([Id],[TransactionType],[Message]) 
+	VALUES (@id, @transType, @msg)</value>
+    <comment>Faz a inserção na tabela de Log. Parâmetros:
+- Id da transação = @Id,
+- Tipo de transação = @transType,
+- Mensagem = @msg.
+</comment>
+  </data>
+  <data name="ItensAberto_RDR1_1" xml:space="preserve">
+    <value>SELECT	 RDR1.LineNum
+		,RDR1.ItemCode
+		,RDR1.Quantity
+		,RDR1.Price
+		,RDR1.WhsCode
+		,ORDR.ObjType 
+		,ORDR.DocNum
+		,(SELECT RDR1.Quantity - ISNULL(SUM(Quantity),0) FROM INV1 WHERE BaseType = ORDR.ObjType AND BaseEntry = ORDR.DocEntry AND LineNum = RDR1.LineNum) Dif
+FROM	 RDR1 
+INNER JOIN ORDR
+	ON	 ORDR.DocEntry = RDR1.DocEntry
+WHERE	 ORDR.DocEntry = '{0}'
+	AND	 RDR1.LineStatus = 'O'</value>
+    <comment>Retorna os itens em aberto do pedido de venda.</comment>
+  </data>
+  <data name="PopulaCliente_0_DEPRECIADO" xml:space="preserve">
+    <value>INSERT INTO	 [SAGE_CLI]			
+		(	 [CardCode_SAP]		,[CardCode_Jomar]
+			,[CardType]			,[CardName]
+			,[CardFName]		,[LineNum]
+			,[TypeofAddress]	,[AddressName]
+			,[Address]			,[AddrType]
+			,[Street]			,[StreetNo]
+			,[Building]			,[Block]
+			,[ZipCode]			,[State]
+			,[County]			,[City]
+			,[Country]			,[FirstName]
+			,[E_MailL]			,[Tel]
+			,[TaxId0]			,[TaxId1]
+			,[TaxId3]			,[TaxId4]
+			,[CONdP]			,[CreateDate]
+			,[UpdateDate]					) 
+
+		SELECT	
+				 ISNULL(ocrd_1.CardCode, '')			As CardCode
+				,ISNULL(ocrd_1.U_PN_Jomar, '')			As U_PN_Jomar
+				,'cCustomer'							As CardType
+				,ISNULL(Upper(ocrd_1.CardName), '')		As CardName
+				,ISNULL(Upper(ocrd_1.CardFName), '')	As CardFName
+				,0										As Linenum
+				,ISNULL(ocrd_1.AddrType, '')			As TypeofAddress
+				,'COBRANÇA'								As AddressName
+				,ISNULL(ocrd_1.Address, '')				As Address
+				,ISNULL(ocrd_1.AddrType, '')			As AddrType
+				,ISNULL(crd1_1.Street, '')				As Street
+				,ISNULL(crd1_1.StreetNo, '')			As StreetNo
+				,ISNULL(crd1_1.Building, '')			As Building
+				,ISNULL(crd1_1.Block, '')				As Block
+				,ISNULL(crd1_1.ZipCode, '')				As ZipCode
+				,ISNULL(ocst_1.U_UF_JOMAR,'')			As State
+				,ISNULL(crd1_1.County, '')				As County
+				,ISNULL(crd1_1.City, '')				As City
+				,ISNULL(ocry_1.U_Pais_Jomar, '')		As U_Pais_Jomar
+				,ISNULL(ocpr_1.FirstName, '')			As FirstName
+				,ISNULL(ocrd_1.E_MaiL, '')				As E_MailL
+				,ISNULL(ocrd_1.Phone1, '')				As Tel1
+				,ISNULL(crd7_1.TaxId0,'')				As TaxId0
+				,ISNULL(crd7_1.TaxId1,'')				As TaxId1
+				,ISNULL(crd7_1.TaxId3,'')				As TaxId3
+				,ISNULL(crd7_1.TaxId4,'')				As TaxId4
+				,ISNULL(octg_1.U_CONdP_Jomar, '')		As U_CONdP_Jomar
+				,ocrd_1.CreateDate						As CreateDate
+				,ocrd_1.UpdateDate						As UpdateDate
+	FROM		 OCRD ocrd_1
+
+    LEFT JOIN CRD1 crd1_1 
+		ON	 crd1_1.CardCode = ocrd_1.CardCode
+			AND crd1_1.AdresType = 'B'
+    LEFT JOIN OCPR ocpr_1 
+		ON	 ocpr_1.Name = ocrd_1.CntctPrsn 
+			AND ocpr_1.CardCode = ocrd_1.CardCode
+    LEFT JOIN OCTG octg_1 
+		ON	 octg_1.GroupNum = ocrd_1.GroupNum
+    LEFT JOIN OCRY ocry_1 
+		ON	 ocry_1.Code = crd1_1.Country
+    LEFT JOIN CRD7 crd7_1 
+		ON	 crd7_1.CardCode = ocrd_1.CardCode 
+		 AND crd7_1.Address = ''
+	INNER JOIN OCST ocst_1
+		ON	 crd1_1.State = ocst_1.Code
+		 AND crd1_1.Country = ocst_1.Country
+	LEFT JOIN [SAGE_CLI] cli
+		ON	 ocrd_1.CardCode = cli.[CardCode_SAP]
+
+	WHERE	 ocrd_1.CardType = 'C' 
+		-- Filtra apenas por cardcode não informado no [SAGE_CLI]
+		AND	 (cli.[CardCode_SAP] IS NULL)
+		-- Filtra os cardcodes processados
+		AND  (	ISNULL(ocrd_1.U_Processado,'') = 'N' 
+				OR ISNULL(ocrd_1.U_Processado,'') = '')				
+
+GO</value>
+    <comment>Faz o insert na base SAGE_CLI somente se o cardcode não estiver na tabela.
+
+</comment>
+  </data>
+  <data name="Transacao_n08OIGE_0" xml:space="preserve">
+    <value>SELECT	 
+		 [GroupID]
+		,TransactionType
+		,OWOR_ORDER_JOMAR
+		,OWOR_DocNum
+		,OITM_CodeBars
+		,OWOR_WareHouse
+		,-SUM(IGN1_Quantity) IGN1_Quantity 
+		,	CAST(TransactionType as nvarchar(100)) 
+		+	CAST(OWOR_ORDER_JOMAR as nvarchar(100)) 
+		+	CAST(OITM_CodeBars AS nvarchar(20))
+		+	CAST(OWOR_DocNum AS nvarchar(20))
+		+	OWOR_WareHouse as GroupUnique
+		,OWOR_DocNum
+FROM	 [dbo].[Sage_Transaction08] WITH (NOLOCK) 
+WHERE	 [TransactionType] = -8
+	AND  OWOR_DocNum &gt; 1
+	AND	 OIGE_DocNum = 0
+	AND (OWOR_ORDER_JOMAR IS NOT NULL 
+		 OR OWOR_ORDER_JOMAR = '') 
+	AND GroupID &gt; 0
+
+
+GROUP BY TransactionType, OWOR_ORDER_JOMAR, [GroupID],OWOR_DocNum,OITM_CodeBars, OWOR_WareHouse</value>
+    <comment>Faz a pesquisa das transações -8 e a agrupa para um unico lançamento.</comment>
+  </data>
+  <data name="Transacao_n08OWOR_0" xml:space="preserve">
+    <value>SELECT	 CAST(RAND() * 1000 AS INT) + OWOR_ORDER_JOMAR [GroupID]
+		,TransactionType
+		,OWOR_ORDER_JOMAR,OITM_CodeBars
+		,OWOR_WareHouse
+		,SUM(OWOR_PlannedQty) OWOR_PlannedQty 
+		,	CAST(TransactionType as nvarchar(100)) 
+		+	CAST(OWOR_ORDER_JOMAR as nvarchar(100)) 
+		+	CAST(OITM_CodeBars AS nvarchar(20))
+		+	CAST(OWOR_DocNum AS nvarchar(20))
+		+	OWOR_WareHouse as GroupUnique
+FROM	 [dbo].[Sage_Transaction08] WITH (NOLOCK) 
+WHERE	ReadBySAP &lt;&gt; 'Y' 
+	AND [TransactionType] = -8
+	AND (OWOR_DocNum IS NULL OR OWOR_DocNum &lt; 1)
+	AND (OWOR_ORDER_JOMAR IS NOT NULL 
+		 OR OWOR_ORDER_JOMAR = '') 
+
+GROUP BY TransactionType, OWOR_ORDER_JOMAR, OWOR_DocNum,OITM_CodeBars, OWOR_WareHouse</value>
+    <comment>Faz a pesquisa das transações -8 e a agrupa para um unico lançamento.</comment>
+  </data>
+  <data name="Transacao_nW0OIGE_0" xml:space="preserve">
+    <value>SELECT
+		 [GroupID]
+		,TransactionType
+		,OWOR_ORDER_JOMAR
+		,OWOR_DocNum
+		,OITM_CodeBars
+		,OWOR_WareHouse
+		,-SUM(IGN1_Quantity) IGN1_Quantity
+		,	CAST(TransactionType as nvarchar(100))
+		+	CAST(OWOR_ORDER_JOMAR as nvarchar(100))
+		+	CAST(OITM_CodeBars AS nvarchar(20))
+		+	CAST(OWOR_DocNum AS nvarchar(20))
+		+	OWOR_WareHouse as GroupUnique
+		,OWOR_DocNum
+FROM	 [dbo].[Sage_Transaction_WO] WITH (NOLOCK)
+WHERE	 [TransactionType] = -100
+	AND  OWOR_DocNum &gt; 1
+	AND	 OIGE_DocNum = 0
+	AND (OWOR_ORDER_JOMAR IS NOT NULL
+		 OR OWOR_ORDER_JOMAR = '')
+	AND GroupID &gt; 0
+
+
+GROUP BY TransactionType, OWOR_ORDER_JOMAR, [GroupID],OWOR_DocNum,OITM_CodeBars, OWOR_WareHouse</value>
+    <comment>Faz a pesquisa das transações -WO e a agrupa para um unico lançamento.</comment>
+  </data>
+  <data name="Transacao_nWOOWOR_0" xml:space="preserve">
+    <value>SELECT	 CAST(RAND() * 1000 AS INT) + OWOR_ORDER_JOMAR [GroupID]
+		,TransactionType
+		,OWOR_ORDER_JOMAR,OITM_CodeBars
+		,OWOR_WareHouse
+		,SUM(OWOR_PlannedQty) OWOR_PlannedQty 
+		,	CAST(TransactionType as nvarchar(100)) 
+		+	CAST(OWOR_ORDER_JOMAR as nvarchar(100)) 
+		+	CAST(OITM_CodeBars AS nvarchar(20))
+		+	CAST(OWOR_DocNum AS nvarchar(20))
+		+	OWOR_WareHouse as GroupUnique
+FROM	 [dbo].[Sage_Transaction_WO] WITH (NOLOCK) 
+WHERE	ReadBySAP &lt;&gt; 'Y' 
+	AND [TransactionType] = -100
+	AND (OWOR_DocNum IS NULL OR OWOR_DocNum &lt; 1)
+	AND (OWOR_ORDER_JOMAR IS NOT NULL 
+		 OR OWOR_ORDER_JOMAR = '') 
+
+GROUP BY TransactionType, OWOR_ORDER_JOMAR, OWOR_DocNum,OITM_CodeBars, OWOR_WareHouse</value>
+    <comment>Faz a pesquisa das transações -WO e a agrupa para um unico lançamento.</comment>
+  </data>
+  <data name="Transacoes_1" xml:space="preserve">
+    <value>SELECT 
+		 Id
+		,AddDate
+		,TransactionType
+		,ReadBySAP
+		,DocNum
+		,DocDate
+		,TaxDate
+		,ISNULL(GroupNum,0) as GroupNum
+		,BplId
+		,OITM_CodeBars
+		,U_Lot
+		,U_Quality
+		,Quantity
+		,WareHouse
+		,Comments
+FROM	 dbo.[Sage_Transacoes] WITH (NOLOCK) 
+WHERE	 ReadBySAP &lt;&gt; 'Y'
+	AND	 (CAST(TransactionType AS int) = {0} OR CAST(TransactionType AS int) = -{0})
+ORDER BY ReadBySAP DESC, BplId ASC</value>
+    <comment>Faz a pesquisa dos dados da tabela Transações que não foram lido pelo SAP e com o seguinte parâmetros : 
+- Tipo de transação = @TransType (TransactionType)</comment>
+  </data>
+</root>
